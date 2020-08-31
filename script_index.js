@@ -77,23 +77,34 @@ function showCalendar(month, year) {
                 let cellText = document.createTextNode("");
                 cell.appendChild(cellText);
                 row.appendChild(cell);
-                cell.classList.add("nully"); 
+                cell.classList.add("nully");              
 
             }
-            
+
 
             else if (date > daysInMonth) {
                 break;
-            }
+            } 
+
+            //for any cell before day 1 
 
 
             else {
+              var dateB;
+               if(date < 10)
+                {
+                  dateB = "0" + date;
+                }
+                else
+                  dateB = date;
                 let cell = document.createElement("td");
-                let cellText = document.createTextNode(date);
+                let cellText = document.createTextNode(dateB);
+
+                console.log(date);
                 
                 // Colors today's date:
                 // if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
-                //   ell.classList.add("bg-info");
+                // cell.classList.add("bg-info");
                 // } 
                 
                 //Colors articles posted in:
@@ -108,7 +119,6 @@ function showCalendar(month, year) {
                 cell.setAttribute("id", "day_");
                 date++;
 
-        
 
                 $(document.body).ready(function() {
                   $( "td" ).each(function( i ) {

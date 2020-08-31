@@ -1,3 +1,8 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
 html{
   background-color: #bfb69b;
   overflow: none;
@@ -5,7 +10,6 @@ html{
 
 *{
   text-decoration: none;
-  font-family: 'Helvetica', Helvetica, Arial, sans-serif;
   color:white;
 }
 
@@ -13,6 +17,9 @@ body{
   overflow-y: auto;
   overflow-x: none;
   margin-bottom:20px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 15pt;
+  line-height: 1.25;
 }
 
 header a:link, .main a:link{
@@ -24,7 +31,6 @@ header a:link, .main a:link{
 
 #scroller {
   scrollbar-width: 10px;
-
 }
 
 #scroller::-webkit-scrollbar-track {
@@ -45,35 +51,35 @@ header a:link, .main a:link{
 header{
 margin-left:22px;
 margin-top:20px;
-margin-bottom:25px;
+margin-bottom:27px;
 width:100%;
 padding-bottom: 5px;
 }
 
 header .title{
-  font-size: 18pt;
   color: white;
   position: fixed;
   left:20px;
   z-index: 100;
-  text-transform: uppercase;
   background-color: #bfb69b;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14pt;
 }
 
 header .about{
-  font-size: 18pt;
   color: white;
   position: fixed;
   right:20px;
   z-index: 100;
-  text-transform: uppercase;
   background-color: #bfb69b;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14pt;
 }
 
 
 .container{overflow: none;
   display: flex;
-height: 95%}
+  height: 95%}
 
 .main{
   padding:10px;
@@ -90,19 +96,6 @@ color:#f2ff00;
 color:white;
 }
 
-
-
-.menu_main{
-  padding-top:10px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  margin-right: 15px;
-  width: 20%;
-  height: 280px;
-  display: block;
-  height: 95%;
-}
-
 #scroller{
   overflow-x: hidden;
   overflow-y: auto;
@@ -112,23 +105,22 @@ color:white;
   border: solid 1.5px white;    
 }
 
-
 #scroller #scroller_title{
-  font-size: 18pt;
   color: white;
   margin-left:10px;
   margin-bottom:15px;
   z-index: 100;
   position: sticky;
-  text-transform: uppercase;
   background-color: #bfb69b;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14pt;
 }
 
 .bodytext{
 margin-top:20px;
 margin-left:20px;
 margin-bottom:20px;
-font-size: 18pt;
+font-size: 14pt;
 padding:15px;
 border: solid 1.5px white; 
 }
@@ -139,7 +131,7 @@ overflow-y: auto;
 width:60%;
 margin:10px;
 margin-bottom:20px;
-font-size: 18pt;
+font-size: 14pt;
 padding:10px;
 background-color: #bfb69b;
 border: solid 1.5px white;
@@ -147,37 +139,68 @@ border: solid 1.5px white;
 
 
 .article_title{
-font-family: 'Helvetica', Helvetica, Arial, sans-serif;
-margin-bottom: -20px;
+font-family: 'Helvetica', sans-serif;
+font-size: 14pt;
+margin-bottom: -15px;
+margin-left: 2px;
 }
+
 .article_title a{
-font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+font-family: 'Helvetica', sans-serif;
+font-size: 14pt;
 color: white;
 background-color: #bfb69b;
 border: solid 1.5px #bfb69b;
-padding-left: 2px;
+margin-left: -4px;
 padding-right: 2px;
 margin-right: 10px;
 }
+
+.article_title span {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 14pt;
+}
+
 .article_cont{
 margin: 0px;
 padding: 0px;
 } 
 
 .article_footer{
-  font-family: 'Helvetica', Helvetica, Arial, sans-serif;
-  margin-bottom: 0px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14pt;
+  color:white;
+  margin-bottom: -4px;
   margin-top: 10px;
   text-align: right;
 }
 
+.article_footer a, .article_footer a:link, .article_footer a:visited {
+  color:white;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14pt;
+}
 
-#menu_setup{text-decoration: none;
+.menu_main{
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14pt;
+  padding-top:10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  width: 20%;
+  height: 280px;
+  display: block;
+  height: 95%;
+}
+
+#menu_setup{
+  text-decoration: none;
   padding:10px;
   position: relative;
   margin-top: -10px;
   background-color: #bfb69b;
-  font-size: 18pt;
+  font-size: 14pt;
 }
 
 #menu_setup_2{
@@ -186,7 +209,7 @@ padding: 0px;
   margin-top:25px;
   position: relative;
   height:75%;
-  font-size: 18pt;
+  font-size: 14pt;
  /* border: solid 1.5px white;*/
 }
 
@@ -194,20 +217,25 @@ select{
   background-color: #bfb69b;
   outline: solid 0.25pt #bfb69b;  
   outline-offset: -1.25pt;
-  font-size: 18pt;
-  width: 44%;
+  width: 39%;
+  font-size: 14pt;
 }
 
 table{
   position: relative;
-  font-size: 1.5vw;
+  font-size: 14pt;
   margin: auto;
   padding: 0px;
 }
 
 #calendar{
   text-align: right;
-  font-size: 1.65vw;
+  font-size: 14pt;
+}
+
+tbody{
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 14pt;
 }
 
 th{
@@ -218,29 +246,30 @@ th{
 
 .calendar-top{
     border: solid 1.5px white;
-
 }
 
 .calendar-title, .calendar-title a {
   text-align: center;
-  padding-top: 10px;
-  font-size: 18pt;
+  padding-top: 20px;
+  font-size: 14pt;
 }
 
 #next{
   text-align: right;
-  margin-left: 10px;
-  color:#f2ff00;
+  color:white;
 }
 
 #previous{
   text-align: left;
-  margin-right: 20px;
-  color:#f2ff00;
+  color:white;
+}
+
+.card-header{
+  margin:21px;
 }
 
 .lead{
-padding-left: 20px;
+  padding-left: 45px;
 }
 
 .form-inline{
