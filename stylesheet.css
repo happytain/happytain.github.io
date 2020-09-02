@@ -37,7 +37,6 @@ header a:link, .main a:link{
   border-left: 1.5px solid white;
 }
 
-
 #scroller::-webkit-scrollbar-thumb {
   background-color: #bfb69b;
   border-left: 1.5px solid white;
@@ -75,7 +74,6 @@ header .about{
   font-family: 'Helvetica', sans-serif;
   font-size: 14pt;
 }
-
 
 .container{overflow: none;
   display: flex;

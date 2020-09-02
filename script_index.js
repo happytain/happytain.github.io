@@ -108,10 +108,10 @@ function showCalendar(month, year) {
                 // } 
                 
                 //Colors articles posted in:
-                //– JUNE:
-                if (month === 5){ if (date === 8 || date === 15 || date === 22){ cell.classList.add("heyo");}}
-                //– JULY:
-                // if (month === 6){ if (date === ... ){ cell.classList.add("heyo");}}
+                //– June:
+                if (month === 5){ if (date === 8 || date === 15){ cell.classList.add("heyo");}}
+                //– August:
+                if (month === 8){ if (date === 1){ cell.classList.add("heyo");}}
 
 
                 cell.appendChild(cellText);    
@@ -139,8 +139,8 @@ function showCalendar(month, year) {
 
                   // ('#day_' + newNumber + '-' + realMonth + '-' + currentYear)
                   
-                  $("#day_22-6-2020").click(function(){
-                  window.location = "page/22-6-2020.html";
+                  $("#day_1-9-2020").click(function(){
+                  window.location = "page/1-9-2020.html";
                   });
                   $("#day_15-6-2020").click(function(){
                   window.location = "page/15-6-2020.html";
@@ -148,6 +148,7 @@ function showCalendar(month, year) {
                   $("#day_8-6-2020").click(function(){
                   window.location = "page/8-6-2020.html";
                   });
+
 
                 });
                     

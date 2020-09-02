@@ -84,23 +84,34 @@ function showCalendar(month, year) {
 
             else if (date > daysInMonth) {
                 break;
-            }
+            } 
+
+            //for any cell before day 1 
 
 
             else {
+              var dateB;
+               if(date < 10)
+                {
+                  dateB = "0" + date;
+                }
+                else
+                  dateB = date;
                 let cell = document.createElement("td");
-                let cellText = document.createTextNode(date);
+                let cellText = document.createTextNode(dateB);
+
+                console.log(date);
                 
                 // Colors today's date:
                 // if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
-                //   ell.classList.add("bg-info");
+                // cell.classList.add("bg-info");
                 // } 
                 
                 //Colors articles posted in:
-                //– JUNE:
-                if (month === 5){ if (date === 8 || date === 15 || date === 22){ cell.classList.add("heyo");}}
-                //– JULY:
-                // if (month === 6){ if (date === ... ){ cell.classList.add("heyo");}}
+                //– June:
+                if (month === 5){ if (date === 8 || date === 15){ cell.classList.add("heyo");}}
+                //– August:
+                if (month === 8){ if (date === 1){ cell.classList.add("heyo");}}
 
 
                 cell.appendChild(cellText);    
@@ -108,7 +119,6 @@ function showCalendar(month, year) {
                 cell.setAttribute("id", "day_");
                 date++;
 
-        
 
                 $(document.body).ready(function() {
                   $( "td" ).each(function( i ) {
@@ -129,15 +139,16 @@ function showCalendar(month, year) {
 
                   // ('#day_' + newNumber + '-' + realMonth + '-' + currentYear)
                   
-                  $("#day_22-6-2020").click(function(){
-                  window.location = "22-6-2020.html";
+                  $("#day_1-9-2020").click(function(){
+                  window.location = "page/1-9-2020.html";
                   });
                   $("#day_15-6-2020").click(function(){
-                  window.location = "15-6-2020.html";
+                  window.location = "page/15-6-2020.html";
                   });
                   $("#day_8-6-2020").click(function(){
-                  window.location = "8-6-2020.html";
+                  window.location = "page/8-6-2020.html";
                   });
+
 
                 });
                     
