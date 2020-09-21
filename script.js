@@ -28,22 +28,6 @@ function jump() {
     showCalendar(currentMonth, currentYear); //currentMonth where: Jan = 0, Dec = 11
 }
 
-// function redirect() {
-//   // $('#day_22-6-2020').css( "background-color", "red" );
-//   // window.location = "page/6.8.20.html";
-
-//   // $(document).delegate("div", "click", function() {
-//   //  window.location = $(this).find("#day_22-6-2020").attr("page/6.8.20.html");
-//   // });
-
-//   // $(document).ready(function(){
-//   //   $("#day_22-6-2020").click(function(){
-//   //       window.location = ("page/6.8.20.html"
-//   //   });
-//   // });
-
-// }
-
 
 function showCalendar(month, year) {
 
